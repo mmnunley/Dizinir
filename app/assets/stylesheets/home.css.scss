@@ -1,0 +1,63 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$uniqueblue: #1C94C9;
+$blue: #3bbfce;
+$margin: 16px;
+
+* {
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #DDD;
+}
+
+#mainContent{
+	width: 600px;
+	margin: 10px auto 0px auto;
+	padding: 10px;
+	border-left: 10px solid black;
+
+}
+
+#header{
+	background-color: $uniqueblue;
+	height: 170px;
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
+}
+
+#logoWrapper{
+	text-align: center;
+}
+
+.logo{
+	margin: 20px auto; 
+	width: 400px;
+}
+
+.belowHeader {
+	height: 20px;
+	position: relative;
+	background-color: black;
+	opacity: 0.3;
+	-moz-opacity: 0.3;
+	filter:alpha(opacity=3);
+}
+
+.aboveHeader {
+	 @extend .belowHeader;
+}
+
+#mycanvas {
+	position: absolute;
+	left: 460px;
+}

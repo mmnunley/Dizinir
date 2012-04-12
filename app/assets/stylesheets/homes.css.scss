@@ -1,0 +1,189 @@
+// Place all the styles related to the Homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$uniqueblue: #1C94C9;
+$blue: #3bbfce;
+$margin: 16px;
+
+* {
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+h1{
+	color: $uniqueblue;
+	font-size: 20px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #DDD;
+}
+
+#mainContent{
+	width: 600px;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+	/*border-left: 20px solid rgba(0,0,0, .3);
+	border-right: 20px solid rgba(0,0,0, .3);*/
+}
+
+#header{
+	background-color: white;
+	height: 500px;
+	width: 1000px;
+	margin: 0px auto;
+	position: relative;
+	border-left: 10px solid rgba(0,0,0, .3);
+	border-right: 10px solid rgba(0,0,0, .3);
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
+	background-color: black;
+	height:300px;
+}
+
+#logoWrapper{
+	text-align: center;
+}
+
+#logoWrapper a{
+	height: 0px;
+}
+
+#logoWrapper a:hover{
+	text-decoration: none;
+	border: none;
+}
+
+#logoWrapper a:link{
+	text-decoration: none;
+	border: none;
+}
+
+#logoWrapper a:active{
+	text-decoration: none;
+	border: none;
+}
+
+.logo{
+	margin: 20px auto; 
+	width: 400px;
+	margin: 200px 0px 0px 0px;
+}
+
+.user_form fieldset
+{
+  background-color: #efe;
+}
+
+.user_form legend
+{
+  color: #dfd;
+  background-color: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+  
+.user_form label
+{
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+
+.user_form select, .user_form textarea, .user_form input {
+  margin-left: 0.5em;
+}
+
+.user_form .submit
+{
+  margin-left: 4em;
+}
+
+.user_form div {
+  margin: 0.5em 0;
+}
+
+.MenuAbout{
+	position: absolute;
+	right: 640px;
+	top: 110px;
+	width: 86px;
+	background: url('/assets/MenuGroupAbout.png') top;
+	background-repeat: no-repeat;
+	height: 86px;
+}
+
+.MenuAbout:hover{
+	background: url('/assets/MenuGroupAbout.png') bottom;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	border-radius: 100px;
+}
+
+.MenuServices{
+	position: absolute;
+	right: 464px;
+	background: url('/assets/MenuGroupServices.png') top;
+	background-repeat: no-repeat;
+	top: 110px;
+	width: 86px;
+	height: 86px;
+}
+
+.MenuServices:hover{
+	background: url('/assets/MenuGroupServices.png') bottom;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	border-radius: 100px;
+}
+
+.MenuContact{
+	position: absolute;
+	right:288px;
+	width: 86px;
+	height: 86px;
+	background: url('/assets/MenuGroupContact.png') top;
+	background-repeat: no-repeat;
+	top:110px;
+}
+
+.MenuContact:hover{
+	background: url('/assets/MenuGroupContact.png') bottom;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	border-radius: 100px;
+}
+
+.MenuPortfolio{
+	position: absolute;
+	top:380px;
+	width: 240px;
+	height: 240px;
+	background: url('/assets/MenuGroupPortfolio.png') top;
+	background-repeat: no-repeat;
+	right: 386px;
+}
+
+.MenuPortfolio:hover{
+	background: url('/assets/MenuGroupPortfolio.png') bottom;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
+	border-radius: 300px;
+}

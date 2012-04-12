@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dizinir</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!--<div class="aboveHeader">
+	</div> / -->
+		<header id="header">
+			<div id="logoWrapper">
+				  <%= image_tag("DIZINIRLogo.png", :class => "logo") %>
+				  <a href="/"> <div class="MenuAbout"></div></a>
+				  <a href="/"> <div class="MenuServices"></div></a>
+				  <a href="/"> <div class="MenuContact"></div></a>
+				  <a href="/"> <div class="MenuPortfolio"></div></a>
+				 <!-- <%= link_to image_tag("MenuPreAbout.png", :class => "MenuAbout", :mouseover => "MenuAbout.png") %>-->
+		<!-- 	      <%= link_to image_tag("MenuPreServices.png", :class => "MenuServices", :mouseover => "MenuServices.png") %>
+				  <%= link_to image_tag("MenuPortfolio.png", :class => "MenuPortfolio") %>
+				  <%= link_to image_tag("MenuPreContact.png", :class => "MenuContact", :mouseover => "MenuContact.png") %> -->
+			</div><!-- /logoWrapper -->
+			
+		</header><!-- /header -->
+	<!-- <div class="belowHeader">
+	</div>
+ <div id="mainContent">
+		
+	</div>
+		 -->
+	<footer id="footer">
+		Copyright 2012 - Dizinir &copy;
+
+	</footer><!-- /footer -->
+			<% if session[:user_id] %>
+				<br />
+				<%= link_to 'Products', products_path %> <br />
+				<%= link_to 'Users', users_path %> <br />
+				<br />
+				<%= button_to 'Logout', logout_path, :method => :delete %>
+			<% end %>
+	
+</body>
+</html>
