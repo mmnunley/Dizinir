@@ -32,7 +32,7 @@
 	<footer id="footer">
 		Copyright 2012 - Dizinir &copy;
 
-	</footer><!-- /footer -->
+		<div style="margin-top: 150px; text-align: left">
 			<% if session[:user_id] %>
 				<br />
 				<%= link_to 'Products', products_path %> <br />
@@ -40,6 +40,9 @@
 				<br />
 				<%= button_to 'Logout', logout_path, :method => :delete %>
 			<% end %>
+		</div><!-- / -->
+	</footer><!-- /footer -->
+			
 	
 </body>
 </html>
