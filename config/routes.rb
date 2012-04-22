@@ -1,5 +1,11 @@
 Dizinir::Application.routes.draw do
-  get 'admin' => 'admin#index'
+  get "contact/_contact"
+
+  get "portfolio/_portfolio"
+
+  get "services/_services"
+
+  get 'admin' => 'admin#index', :as => 'admin'
 
   resources :users
 
@@ -9,8 +15,8 @@ Dizinir::Application.routes.draw do
 
 
   controller :sessions do
-    get 'login' => :new
-    post 'login' => :create
+    get 'login'     => :new
+    post 'login'    => :create
     delete 'logout' => :destroy
   end
 
@@ -63,7 +69,7 @@ Dizinir::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'homes#index'
+   root :to => 'homes#index', :as => 'home'
 
   # See how all your routes lay out with "rake routes"
 

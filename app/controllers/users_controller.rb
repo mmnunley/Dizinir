@@ -73,7 +73,16 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user = User.find(params[:id])
-    @user.destroy
+    
+    #This catches the delete of the last user within the database
+    #It will make sure that no exception was raised on deleting. See
+    # user.rb model for the method to check for this.
+    begin
+      @user.destroy
+      flash[:notice] = "User #{@user.username} deleted"
+    rescue Exception => e
+      flash[:notice] = e.message
+    end
 
     respond_to do |format|
       format.html { redirect_to users_url }
