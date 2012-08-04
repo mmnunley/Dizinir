@@ -1,0 +1,58 @@
+    <!-- first parameter @contact_form tells the method the instance variable
+to use when naming fields and when arranging for the field values
+to be passed back to the controller 
+
+-->
+
+<%= form_for @contact_form, :html => {:id => 'contact-form-actual'}, :remote => true, :url => { :controller => 'homes' } do |f| %>
+
+<!-- <div id="post_errors" style="display:none"></div> -->
+<div id="flash_notice" style="display:none"> <%= notice %> </div>
+
+   <% if @contact_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact_form.errors.count, "error") %> prohibited this form from being sent:</h2>
+
+      <ul>
+      <% @contact_form.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %> 
+
+  <table>
+    <tbody>
+      <tr>
+        <div class="field">
+          <td><label for="name">C:\Name></label></td>
+          <td><%= f.text_field :name, :size => 25, :id => 'contact-form-name', :title => 'name', :placeholder => 'type full name here...'  %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <td><label for="name">C:\Email></label></td>
+          <td><%= f.text_field :email, :size => 25, :id => 'contact-form-email', :title => 'email', :placeholder => 'type email here...' %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <td><label for="name">C:\Phone></label></td>
+          <td><%= f.text_field :phone, :size => 25, :id => 'contact-form-phone', :title => 'phone', :placeholder => 'type phone number here...(optional)'  %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <td><label for="name">C:\Message></label></td>
+          <td><%= f.text_area :message, :rows => 21, :cols => 42, :id => 'contact-form-message', :title => 'type message/request...', :placeholder => 'type message/request here...'   %></td>
+        </div>
+      </tr>
+      <!-- <tr>
+       
+      </tr> -->
+    </tbody>
+  </table> 
+    <div class="submit-actions">
+        <td><%= f.submit 'C:\Send>', :id => 'contact-form-send' %></td>
+    </div>
+<% end %>

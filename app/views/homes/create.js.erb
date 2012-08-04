@@ -1,0 +1,37 @@
+<% if @contact_form.errors.any? %>
+  /*Hide the flash notice div*/
+ // $("#flash_notice").hide(300);
+
+  /*Update the html of the div post_errors with the new one*/
+ $("#contact-form-actual").html("<%= escape_javascript(render :partial => 'contact/form')%>");
+
+  /*Show the div post_errors*/
+  // $("#post_errors").show(300);
+<% else %>
+  /*Hide the div post_errors*/
+   $("#error_explanation").hide(300);
+   $(".field_with_errors").css('backgroundColor', 'none');
+   // $("#contact-form-actual").html("<%= escape_javascript(render('contact/form'))%>");
+  //$name = $("#contact-form-name").val();
+  // $("#contact-form-name").replaceWith("<label name='contact_form[name]' id='contact-form-name' 
+  //   size='25' value='" + $name + "'></label>")
+
+  $('#typeWriter').css('z-index', 10);
+  $('#paper').animate({top: '+=10'}, 100).delay("100");
+  $('#paper').animate({top: '+=500'}, 800);
+  $('#contact-form').animate({top: '+=10'}, 100).delay("100");
+  $('#contact-form').animate({top: '+=500'}, 800);
+  
+
+  
+
+  $('#paper').animate({top: '-=500'}, 800);
+  $('#contact-form').animate({top: '-=500'}, 800);
+
+  /*Clear the entire form*/
+  $("#contact-form-actual")[0].reset();
+  $("#flash_notice").fadeIn(2000).delay(2500).fadeOut(5000);
+ //$('#typeWriter').css('z-index', 3);
+  /*Update the html of the div flash_notice with the new one*/
+  //$("#contact-notice").html("<%= escape_javascript(flash[:notice])%>");
+<% end %>

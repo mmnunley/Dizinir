@@ -1,3 +1,18 @@
 // Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.AboutText{
+	padding-top: 66px;
+	width: 500px;
+	padding-left: 220px;
+	font-size: 16px;
+	line-height: 40px;
+	color: black;
+}
+
+#AboutWrapper {
+	background-image: url('/assets/DeskEditing.png');
+	background-repeat: no-repeat;
+	height: 100%;
+}

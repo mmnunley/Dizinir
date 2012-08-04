@@ -1,3 +1,166 @@
-// Place all the styles related to the contact controller here.
+// Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#contact-form{
+	position: absolute;
+	left: 25px;
+	font-family: "Lucida Console" !important;
+	top: 20px;
+	color: white;
+	z-index: 4;
+	tr td label{
+		font-family: "Lucida Console" !important;
+		font-size: 16px;
+	}
+	tr td{
+		vertical-align: top;	
+		font-family: "Lucida Console" !important;
+
+	}
+	tr td input {
+		background-color: black;
+		font-family: "Lucida Console" !important;
+		font-size: 16px;
+		color: white;
+
+		border: none;
+		outline: none;
+		border-bottom: 1px dotted rgba(145,128,129,.5);
+
+	}	
+	tr td textarea {
+		font-size: 16px;
+		color: white;
+		font-family: "Lucida Console" !important;
+		background-color: black;
+		border: none;
+		outline: none;
+		vertical-align: top;
+	}
+}
+
+#contact-background-wrapper{
+	background-color: white;
+	width: 620px;
+	position: relative;
+	height: 630px;
+	margin: 30px auto;
+	border-radius: 8px;
+	border: 1px white solid;
+	box-shadow: 0px 0px 16px 2px rgba(0,0,0,1);
+}
+
+#contact-form-header-text{
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	background: url('/assets/Command-Prompt.png');
+	background-repeat: no-repeat;
+}
+
+#contact-background{
+	background-color: rgba(28,148,201,1);
+	width: 620px;
+	font-family: "Lucida Console" !important;
+	height: 630px;
+	margin: auto;
+	position: relative;
+	border-radius: 8px;
+	/*border-top: 20px rgba(28,148,201,1) solid;
+	border-right: 10px rgba(28,148,201,1) solid;
+	border-left: 10px rgba(28,148,201,1) solid;
+	border-bottom: 10px rgba(28,148,201,1) solid;*/
+	background: -moz-linear-gradient(top, rgba(153,196,252,0.4) 0%, rgba(0,124,219,1) 34%, rgba(0,124,219,1) 95%, rgba(153,196,252,0.4) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,196,252,0.4)), color-stop(34%,rgba(0,124,219,1)), color-stop(95%,rgba(0,124,219,1)), color-stop(100%,rgba(153,196,252,0.4))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(153,196,252,0.4) 0%,rgba(0,124,219,1) 34%,rgba(0,124,219,1) 95%,rgba(153,196,252,0.4) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(153,196,252,0.4) 0%,rgba(0,124,219,1) 34%,rgba(0,124,219,1) 95%,rgba(153,196,252,0.4) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(153,196,252,0.4) 0%,rgba(0,124,219,1) 34%,rgba(0,124,219,1) 95%,rgba(153,196,252,0.4) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(153,196,252,0.4) 0%,rgba(0,124,219,1) 34%,rgba(0,124,219,1) 95%,rgba(153,196,252,0.4) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6699c4fc', endColorstr='#6699c4fc',GradientType=0 ); /* IE6-9 */
+}
+
+#contact-form-wrapper{
+	background-color: black;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	outline: 1px solid white;
+}
+
+#contact-form-wrapper-text{
+	position: absolute;
+	color: white;
+	top: 2px;
+	left: 2px;
+	font-family: "Lucida Console";
+}
+
+#paper{
+	position: absolute;
+	top: -200px;
+	left: -20px;
+	z-index: 2;
+}
+
+#typeWriter{
+	position: absolute;
+	left: 250px;
+	top:300px;
+	z-index: 3;
+}
+
+#contact-form-send{
+	
+}
+
+.submit-actions{
+	position: absolute;
+	top: 500px;
+}
+
+#contact-footer{
+	background-color: white;
+	width: 20%;
+	top: 12px;
+	left: -28px;
+	position: absolute;
+	box-shadow: 1px 1px 6px 1px rgba(0,0,0,.8);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.footer-triangle{
+	position: absolute;
+	left: -2px;
+	top: 32px;
+	border-left: 30px solid transparent;
+	border-top: 30px solid black;
+	margin:0px;
+	padding: 0px;
+	height: 0px;
+	width: 0px;
+	line-height: 0px;
+}
+
+#flash_notice{
+	position: absolute;
+	top: -44px;
+	left: 40px;
+	color: green;
+	padding: 2px;
+	border: 2px solid green;
+	background-color: white;
+	z-index: 100;
+}
+
+#error_explanation{
+	position: absolute;
+	top: 462px;
+	color: black;
+	left: 180px;
+	width: 280px !important;
+}

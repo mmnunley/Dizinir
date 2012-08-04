@@ -11,3 +11,185 @@
  *= require_self
  *= require_tree .
 */
+
+/*----------------------------
+  The Custom Style Additions
+-----------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Averia+Gruesa+Libre);
+
+
+
+/*----------------------------
+	General Styles
+-----------------------------*/
+
+* {
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+html{
+	background: url('/assets/Dizinir-bg2.jpg') #18222b;
+	background-repeat: no-repeat;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	/*background-color: #FFF;*/
+	width: 5000px;
+	height: 5000px;
+	/*background:url('/assets/bg_center.jpg') center 240px no-repeat;*/
+	/*background: url('/assets/Dizinir_Background4.jpg');*/
+	/*background-repeat: no-repeat;*/
+}
+
+#AllWrapper{
+	
+}
+
+h3{
+	position:absolute;
+	font-family: 'Averia Gruesa Libre', cursive;
+	top:-60px; 
+	font-size: 30px; 
+	color: white;
+	font-variant: small-caps;
+}
+
+/*----------------------------
+	The Link Styles
+-----------------------------*/
+
+a, a:visited {
+	text-decoration:none;
+	/*outline:none;*/
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration: none;
+	background-color: none;
+}
+
+
+/*----------------------------
+	The Content Pages
+-----------------------------*/
+
+#AboutPage{
+	position: absolute;
+	left: 500px;
+	top: 500px;
+	height: 750px; 
+	width: 1000px; 
+	background-color: white;
+	background-color: rgba(100,100,100, .5);
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#ServicesPage{
+	position: absolute;
+	left: 3500px;
+	top: 500px;
+	height: 750px; 
+	width: 1000px; 
+	background-color: rgba(100,100,100, .5);
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#PortfolioPage{
+	position: absolute;
+	left: 3500px;
+	top: 3500px;
+	height: 750px; 
+	width: 1000px; 
+	background-color: rgba(100,100,100, .5);
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#ContactPage{
+	position: absolute;
+	left: 500px;
+	top: 3500px;
+	height: 750px; 
+	width: 1000px; 
+	background-color: rgba(100,100,100, .5);
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+/*----------------------------
+	The Header
+-----------------------------*/
+
+#header
+{
+	position: fixed;
+	background-color: #1C94C9;
+	border-bottom: solid 2px #49BFE8;
+	border-top: solid 2px #49BFE8;
+	bottom: 0px;
+	height: 80px;
+	width: 100%;
+	z-index: 605;
+	box-shadow: 0px 2px 5px rgba(0,0,0, .5);
+}
+
+
+#headermenu{
+	padding-top: 10px;
+	width: 100%;
+}
+
+#headermenu a{
+	color: #FFF;
+	font-size: 30px;
+	width: 25%; 
+	float: left;
+	text-align: center;
+	font-family: 'Averia Gruesa Libre', cursive;
+	font-variant: small-caps;
+}
+
+#headermenu a:hover{
+	cursor: pointer;
+	text-decoration: none;
+	color: #6BD0CF !important;
+	transition: all 200ms linear; 
+	-webkit-transition: all 200ms linear; 
+	-moz-transition: all 200ms linear; 
+	-ms-transition: all 200ms linear;
+}
+
+.logo{
+	width: 184px;
+	height: 184px;
+	z-index: 300;
+
+}
+
+#logo{
+	width: 100%;
+	position: absolute;
+	top: -70px;
+	height: 70px;
+	text-align: center;
+}
+
+#logo img:hover{
+	top: -30px;
+	cursor: pointer;
+	position: relative;
+	-webkit-transition: all ease-out 0.2s;
+   -moz-transition: all ease-out 0.2s;
+   -o-transition: all ease-out 0.2s;
+   -ms-transition: all ease-out 0.2s;
+   transition: all ease-out 0.2s;
+}
+

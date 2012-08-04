@@ -6,49 +6,61 @@ $uniqueblue: #1C94C9;
 $blue: #3bbfce;
 $margin: 16px;
 
-* {
-	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-	font-size: 13px;
-}
 
-h1{
-	color: $uniqueblue;
-	font-size: 20px;
-}
 
-body {
-	margin: 0px;
-	padding: 0px;
-	background-color: #DDD;
-}
-
-#mainContent{
-	width: 600px;
-	margin: 0px auto 0px auto;
-	padding: 10px;
-	/*border-left: 20px solid rgba(0,0,0, .3);
-	border-right: 20px solid rgba(0,0,0, .3);*/
-}
-
-#header{
+/*#ContentWrapper{
 	background-color: white;
-	height: 500px;
 	width: 1000px;
 	margin: 0px auto;
 	position: relative;
 	border-left: 10px solid rgba(0,0,0, .3);
 	border-right: 10px solid rgba(0,0,0, .3);
-}
+	box-shadow: 0px 0px 20px rgba(0,0,0, .5);
+	/*border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}*/
 
-#footer {
+/*#mainContent{
+	width: 600px;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+	border-left: 20px solid rgba(0,0,0, .3);
+	border-right: 20px solid rgba(0,0,0, .3);
+}*/
+
+
+
+/*#footer {
 	font-size: 10px;
+	width: 1000px;
+	margin: auto;
 	text-align: center;
-	background-color: black;
-	height:400px;
-}
+	background-color: gray;
+	height: 600px;
+	box-shadow: 0px 0px 20px rgba(0,0,0, .5);
+}*/
 
-#logoWrapper{
+/*#leftMenu {
+	left: 0;
+	margin-right: -7px;
+	height: 220px;
+	top: 40%;
+	width: 46px;
+	background-color: #FFF;
+
+	background-image: url("http://thecodeplayer.com/css/../images/feedback_trans_tab.png");
+	background-image: url('/assets/MenuPanel.png');
+	background-repeat: no-repeat;
+	color: white;
+	cursor: pointer;
+	overflow: hidden;
+	position: fixed;
+	text-indent: -100000px;
+	z-index: 100000;
+}*/
+/*#logoWrapper{
 	text-align: center;
+
 }
 
 #logoWrapper a{
@@ -69,14 +81,10 @@ body {
 	text-decoration: none;
 	border: none;
 }
+*/
 
-.logo{
-	margin: 20px auto; 
-	width: 400px;
-	margin: 200px 0px 0px 0px;
-}
 
-.user_form fieldset
+/*.user_form fieldset
 {
   background-color: #efe;
 }
@@ -112,82 +120,20 @@ body {
   margin: 0.5em 0;
 }
 
-.MenuAbout{
-	position: absolute;
-	right: 640px;
-	top: 110px;
-	width: 86px;
-	background: url('/assets/MenuGroupAbout.png') top;
-	background-repeat: no-repeat;
-	height: 86px;
+*/
+
+
+
+
+/*
+.logo:hover{
+	top: -100px;
+	box-shadow: 0px 20px 10px rgba(0,0,0,1);
+	-webkit-transition: all 0.3s ease-out 0.5s;
+   -moz-transition: all 0.3s ease-out 0.5s;
+   -o-transition: all 0.3s ease-out 0.5s;
+   -ms-transition: all 0.3s ease-out 0.5s;
+   transition: all 0.3s ease-out 0.5s;
 }
 
-.MenuAbout:hover{
-	background: url('/assets/MenuGroupAbout.png') bottom;
-	background-repeat: no-repeat;
-	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	border-radius: 100px;
-}
-
-.MenuServices{
-	position: absolute;
-	right: 464px;
-	background: url('/assets/MenuGroupServices.png') top;
-	background-repeat: no-repeat;
-	top: 110px;
-	width: 86px;
-	height: 86px;
-}
-
-.MenuServices:hover{
-	background: url('/assets/MenuGroupServices.png') bottom;
-	background-repeat: no-repeat;
-	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	border-radius: 100px;
-}
-
-.MenuContact{
-	position: absolute;
-	right:288px;
-	width: 86px;
-	height: 86px;
-	background: url('/assets/MenuGroupContact.png') top;
-	background-repeat: no-repeat;
-	top:110px;
-}
-
-.MenuContact:hover{
-	background: url('/assets/MenuGroupContact.png') bottom;
-	background-repeat: no-repeat;
-	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	border-radius: 100px;
-}
-
-.MenuPortfolio{
-	position: absolute;
-	top:380px;
-	width: 240px;
-	height: 240px;
-	background: url('/assets/MenuGroupPortfolio.png') top;
-	background-repeat: no-repeat;
-	right: 386px;
-}
-
-.MenuPortfolio:hover{
-	background: url('/assets/MenuGroupPortfolio.png') bottom;
-	background-repeat: no-repeat;
-	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	-moz-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
-	border-radius: 300px;
-}
-
-.test{
-	text-align: left;
-}
+*/

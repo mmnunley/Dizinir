@@ -1,5 +1,9 @@
 Dizinir::Application.routes.draw do
-  get "contact/_contact"
+  
+  get "contact_form/new"
+  post "contact_form/create"
+
+  #get "contact/_contact"
 
   get "portfolio/_portfolio"
 
